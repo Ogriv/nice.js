@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Nice jQuery Dialog Plugin</title>
+  <meta name="description" content="Nice Dialog Plugin">
+  <meta name="author" content="SitePoint">
+
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="nice/nice.js"></script>
+    
+</head>
+
+<body>
+    <form>
+        <input type="button" class="ui-open">
+        <input type="button" class="close" onClick="javascript:closeLightBox()">
+    </form>
+    
+    <script>
+        
+        $(function() {
+
+            var nice = $(".ui-open").nice({theme: "nice"});
+            
+        });
+        
+        function closeLightBox()
+            {
+
+                $(".close").nice.html("hello,<br>There!");
+
+            }
+    
+    </script>
+</body>
+</html>
